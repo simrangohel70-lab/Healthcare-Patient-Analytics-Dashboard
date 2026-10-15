@@ -1,258 +1,270 @@
-# 🏥 Healthcare Patient Analytics Dashboard | Power BI
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black" />
-  <img src="https://img.shields.io/badge/Power%20Query-Data%20Transformation-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white" />
-  <img src="https://img.shields.io/badge/Dataset-Kaggle-20BEFF?style=for-the-badge&logo=kaggle&logoColor=white" />
-  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
-</p>
+# 🏥 Healthcare Patient Analytics Dashboard
 
-<p align="center">
-  <b>Turning Healthcare Data into Meaningful Insights 📊</b>
-</p>
+**An interactive Power BI report that turns 55,500 raw patient records into clear insights on conditions, hospitals, insurance and billing.**
+
+![Power BI](https://img.shields.io/badge/Power%20BI-Dashboard-F2C811?style=for-the-badge&logo=powerbi&logoColor=black)
+![Power Query](https://img.shields.io/badge/Data%20Prep-Power%20Query-217346?style=for-the-badge)
+![DAX](https://img.shields.io/badge/Calculations-DAX-CC0000?style=for-the-badge)
+![Records](https://img.shields.io/badge/Records-55%2C500-0078D4?style=for-the-badge)
+![Status](https://img.shields.io/badge/Project-Completed-success?style=for-the-badge)
+
+<br>
+
+<img width="1321" height="737" alt="image" src="https://github.com/user-attachments/assets/2566961a-d844-48e9-a5b5-5198e87310d0" />
+
+
+
+<br><br>
+
+
+</div>
+
+---
+
+## 📑 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Video Demonstration](#-video-demonstration)
+- [Dashboard Preview](#-dashboard-preview)
+- [Key Features](#-key-features)
+- [Data Preparation (Power Query)](#-data-preparation-power-query)
+- [Data Model and Summary Tables](#-data-model-and-summary-tables)
+- [Visuals Used](#-visuals-used)
+- [Key Insights](#-key-insights)
+- [Tools and Technologies](#️-tools-and-technologies)
+- [Repository Structure](#-repository-structure)
+- [How to Use](#-how-to-use)
+- [Learning Outcomes](#-learning-outcomes)
+
+
+---
+
+## 📌 Project Overview
+
+The **Healthcare Patient Analytics Dashboard** is a 4-page Power BI report built on a healthcare dataset of **55,500 patient records**. It helps a user answer questions such as:
+
+- Which medical conditions have the most patients?
+- Which hospitals bring in the most billing revenue?
+- How do billing amounts differ by insurance provider and department?
+- How do admissions change month by month and year by year?
+
+The project covers the full analytics workflow: **loading data, cleaning and transforming it in Power Query, building summary tables, designing visuals, and adding interactive slicers and filters.**
 
 ---
 
 ## 🎥 Video Demonstration
 
-click here to watch video:-https://drive.google.com/file/d/1sC4ReI0DzASuTv7AGZe6cqkt99XRngmM/view?usp=sharing
+Watch the full walkthrough of the dashboard and the Power Query steps:
+
+<div align="center">
+
+<!-- Tip: take a screenshot of your video's first frame, save it as images/video-thumbnail.png -->
+[![Watch the project video] https://drive.google.com/file/d/1sC4ReI0DzASuTv7AGZe6cqkt99XRngmM/view?usp=sharing
 
 
-- 📂 Dataset import and data source connection
-- 🧹 Data cleaning and transformation using Power Query
-- 🔄 Merge, Append, Pivot, and Unpivot operations
-- 📊 Interactive dashboard and KPI cards
-- 🎛️ Slicers, filters, and report navigation
+</div>
 
-**Project:** Healthcare Patient Analytics Dashboard  
-**Tool:** Microsoft Power BI Desktop
-
-
-## 📌 Table of Contents
-
-- [🎥 Video Demonstration](#-video-demonstration)
-- [📖 Project Overview](#-project-overview)
-- [🎯 Project Objectives](#-project-objectives)
-- [🛠️ Tools and Technologies](#️-tools-and-technologies)
-- [📂 Dataset Information](#-dataset-information)
-- [🧹 Data Preparation](#-data-preparation)
-- [📊 Dashboard Pages](#-dashboard-pages)
-- [⚙️ Key Features](#️-key-features)
-- [💡 Key Insights](#-key-insights)
-- [🖼️ Dashboard Preview](#️-dashboard-preview)
-- [🚀 How to Run the Project](#-how-to-run-the-project)
-- [🎥 Video Demonstration](#-video-demonstration)
-- [📚 Learning Outcomes](#-learning-outcomes)
-- [👩‍💻 Author](#-author)
+> **Note:** In Google Drive, right-click the video, choose **Share**, and set access to **Anyone with the link → Viewer**, so everyone can open it.
 
 ---
 
-## 📖 Project Overview
+## 📊 Dashboard Preview
 
-The **Healthcare Patient Analytics Dashboard** is an interactive Power BI project designed to analyze hospital patient records, medical conditions, admission patterns, billing amounts, and insurance provider information.
 
-The project uses Power Query for data cleaning, transformation, grouping, merging, pivoting, unpivoting, and appending. The prepared data is then used to build an interactive, multi-page Power BI report.
+### 📊 Dashboard Overview
+KPI cards, patients by medical condition, top hospitals by revenue, monthly admissions trend and insurance mix, with slicers for Admission Type, Medical Condition and Admission Year.
 
-The goal is to transform raw healthcare data into meaningful visual insights that support data exploration and reporting.
+<img width="1321" height="726" alt="image" src="https://github.com/user-attachments/assets/d948b593-0184-4f13-8613-10607bc54234" />
 
-## 🎯 Project Objectives
+### 📋 Patient Detail
+A detailed table of patient records with age category, department, stay category, billing and risk flag, filterable by medical condition and admission type.
 
-- 🏥 Analyze patient demographics and medical conditions.
-- 💰 Understand hospital billing and revenue distribution.
-- 📅 Explore patient admission trends by year and month.
-- 🩺 Compare patient counts across medical conditions.
-- 🛡️ Analyze insurance provider distribution and claims.
-- 🔄 Apply essential Power Query data transformation techniques.
-- 📊 Build an interactive dashboard using charts, KPI cards, tables, and slicers.
+<img width="1320" height="736" alt="image" src="https://github.com/user-attachments/assets/b5b282ad-c814-4bd7-ac19-95e06bda2857" />
+
+
+### 💰 Billing Analysis
+Average billing by department and billing tier, plus a matrix of total billing by medical condition and insurance provider.
+
+<img width="1343" height="733" alt="image" src="https://github.com/user-attachments/assets/0628a6e2-1094-4613-8bda-c1a9a9e0c6c2" />
+
+---
+
+## ✨ Key Features
+
+- **4-page report:** Home, Dashboard Overview, Patient Detail and Billing Analysis.
+- **KPI cards:** Total Patients, Total Billing, Average Billing per Patient and Average Length of Stay.
+- **Interactive slicers:** Admission Type (tiles), Medical Condition (dropdown) and Admission Year (range slider).
+- **Cross-filtering:** clicking one condition or admission type updates the charts together.
+- **Smart filters:** page-level filter on Age Category and visual-level filters on key charts.
+- **Dynamic parameters:** `MinAge` and `AdmissionType` parameters for flexible filtering.
+- **Consistent design:** red and white theme, aligned visuals, clear titles and subtitles.
+
+---
+
+## 🗂️ Dataset
+
+| Item | Details |
+|---|---|
+| Main file | `healthcare_dataset.csv` |
+| Lookup file | `Condition_Dept_Lookup.csv` (maps each Medical Condition to a Department) |
+| Records | 55,500 patients |
+| Source | Kaggle Healthcare Dataset (synthetic data) |
+
+**Original columns (15):** Name, Age, Gender, Blood Type, Medical Condition, Date of Admission, Doctor, Hospital, Insurance Provider, Billing Amount, Room Number, Admission Type, Discharge Date, Medication, Test Results.
+
+---
+
+## 🧹 Data Preparation (Power Query)
+
+All cleaning was done in **Power Query Editor** and every Applied Step was given a clear name.
+
+### Data quality problems found
+
+| Problem | How it was found | Fix |
+|---|---|---|
+| Negative values in Billing Amount | Column Profile (min value below zero) | New column `Billing_Amount_Fixed` using `Number.Abs`, then the original column was removed |
+| Mixed capital letters in names (e.g. `Bobby JacksOn`) | Column Distribution on Name | Capitalize Each Word, Trim and Clean |
+| Inconsistent hospital names | Column Distribution | Converted to UPPERCASE |
+
+### Transformations
+
+| Step | What was done |
+|---|---|
+| Text cleaning | Proper case for Name and Doctor, UPPERCASE for Hospital, Trim and Clean |
+| Billing columns | Added `Billing_Amount_Fixed` and `Billing_Rounded`, removed original `Billing Amount` |
+| Date columns | Changed to Date type, extracted `Admission_Year`, `Admission_Month` and `Admission_Month_Num` |
+| Length of stay | Added `Length_of_Stay_Days` = Discharge Date − Date of Admission |
+| Index | Added `Patient_ID` (unique ID for every patient) |
+| Conditional columns | `Age_Category`, `Billing_Tier`, `Stay_Category`, `Risk_Flag` |
+| Merge | Left Outer Join with `Condition_Dept_Lookup` to add the `Department` column |
+| Parameters | `MinAge` (default 18) and `AdmissionType` (default All) used in filter steps |
+
+### New columns and their rules
+
+| Column | Rule |
+|---|---|
+| `Age_Category` | 65 and above = Senior, 18 and above = Adult, otherwise Minor |
+| `Billing_Tier` | 40,000+ = Platinum, 25,000+ = Gold, 10,000+ = Silver, otherwise Standard |
+| `Stay_Category` | 20+ days = Long Stay, 10+ = Medium Stay, 3+ = Short Stay, otherwise Day Case |
+| `Risk_Flag` | Abnormal = High Risk, Inconclusive = Monitor, otherwise Low Risk |
+
+
+---
+
+## 🧩 Data Model and Summary Tables
+
+| Query | Built using | Purpose |
+|---|---|---|
+| `healthcare_dataset` | Main query | Cleaned patient-level table |
+| `Condition_Dept_Lookup` | CSV import | Condition to Department mapping |
+| `Condition summary` | Reference + Group By | Patient count, average billing and average stay by condition |
+| `Hospital Summary` | Reference + Group By | Patients and total revenue by hospital |
+| `Insurance summary` | Reference + Group By | Covered patients and claims by insurance provider |
+| `Monthly Admission` | Reference + Group By | Monthly admissions for the trend chart |
+| `Condition pivot` | Pivot / Unpivot | Admission type counts per condition |
+| `Admissions_Pre2022`, `Admissions_2022Plus`, `Admissions_Full` | Filter + Append | Splitting and re-combining data by year |
+
+Power Query features practiced: **Import mode, column profiling, Reference, Group By, Merge, Pivot, Unpivot, Append, Folder connector, Data Source Settings and Parameters.**
+
+---
+
+## 📈 Visuals Used
+
+| Visual | Shows |
+|---|---|
+| Card | Total Patients, Total Billing, Average Billing, Average Length of Stay |
+| Clustered bar chart | Patients by Medical Condition |
+| Clustered bar chart | Top 10 Hospitals by Total Billing Revenue |
+| Line chart | Monthly Patient Admissions by Year |
+| Donut chart | Patient distribution by Insurance Provider |
+| Table | Patient detail records |
+| Clustered column chart | Average billing by Department and Billing Tier |
+| Matrix | Total billing by Medical Condition and Insurance Provider |
+| Slicers | Admission Type, Medical Condition, Admission Year |
+
+---
+
+## 🔍 Key Insights
+
+> Fill in the numbers from your own dashboard before publishing.
+
+- 🏥 **Most common condition:** `<condition name>` with `<number>` patients.
+- 💰 **Top hospital by revenue:** `<hospital name>` with `<amount>` in total billing.
+- 🛡️ **Largest insurance group:** `<insurance provider>` covering `<percentage>` of patients.
+- 📅 **Admission trend:** `<one line about the monthly or yearly pattern>`.
+- ⚠️ **High-risk patients:** `<number or percentage>` flagged as High Risk based on test results.
+
+---
 
 ## 🛠️ Tools and Technologies
 
-| Tool | Purpose |
+| Tool | Used for |
 |---|---|
-| 📊 Microsoft Power BI Desktop | Dashboard development and visualization |
-| 🔄 Power Query Editor | Data cleaning and transformation |
-| 📁 CSV Files | Source data and lookup tables |
-| 📈 Power BI Visuals | KPI cards, charts, slicers, and matrix |
-| 🧮 Power Query M | Data transformation logic |
+| **Power BI Desktop** | Report design and visualization |
+| **Power Query (M)** | Data cleaning and transformation |
+| **DAX** | Measures and calculations, where applicable |
+| **CSV files** | Source data and lookup data |
 
-## 📂 Dataset Information
+---
 
-**Dataset:** Healthcare Dataset — Patient Hospital Records
+## 📁 Repository Structure
 
-**Source:** Kaggle
-
-**Author:** Prasad Patil (`pras ad22` on Kaggle)
-
-🔗 **Dataset Link:** https://www.kaggle.com/datasets/prasad22/healthcare-dataset
-
-The main dataset contains approximately **55,500 patient records** and 15 columns.
-
-### 📋 Main Dataset Columns
-
-| Category | Fields |
-|---|---|
-| Patient Details | Name, Age, Gender, Blood Type |
-| Medical Information | Medical Condition, Doctor, Hospital |
-| Admission Details | Date of Admission, Discharge Date, Admission Type |
-| Financial Information | Billing Amount, Insurance Provider |
-| Additional Information | Room Number, Medication, Test Results |
-
-### 📄 Additional Lookup File
-
-`Condition_Dept_Lookup.csv`
-
-This manually created lookup file maps medical conditions to hospital departments.
-
-| Medical Condition | Department |
-|---|---|
-| Cancer | Oncology |
-| Diabetes | Endocrinology |
-| Hypertension | Cardiology |
-| Obesity | Bariatrics |
-| Asthma | Pulmonology |
-| Arthritis | Rheumatology |
-
-*Note: The department mapping is created for this project and is used to enrich the main patient dataset.*
-
-## 🧹 Data Preparation
-
-The following Power Query techniques are included in the project:
-
-- 🧼 **Data Profiling:** Column quality, distribution, validity, errors, and empty values.
-- 🔤 **Text Transformations:** Proper Case, UPPERCASE, Trim, and Clean.
-- 🔢 **Numeric Transformations:** Correcting negative billing values and rounding billing amounts.
-- 📅 **Date Transformations:** Extracting admission year and month.
-- 🧮 **Custom Columns:** Patient ID, Age Category, Billing Tier, Stay Category, and Risk Flag.
-- 📊 **Grouping & Aggregation:** Summarizing patients, billing, claims, and monthly admissions.
-- 🔀 **Merge Queries:** Combining the department lookup with patient records.
-- ↔️ **Pivot & Unpivot:** Reshaping admission-type data for analysis.
-- 📚 **Append Queries:** Combining data from different admission-year queries.
-- 📁 **Folder Connector:** Demonstrating folder-based data combination.
-- ⚙️ **Parameters:** Creating dynamic filters for patient age and admission type.
-
-## 📊 Dashboard Pages
-
-### 🏠 Page 1: Home Page
-
-The Home Page serves as the landing page of the Healthcare Patient Analytics Dashboard. It features a clean and professional design with a healthcare-related visual to introduce the project. It provides an overview of the dashboard and helps users navigate to other pages for exploring patient data, healthcare trends, and key insights.
-
-### 🏠 Page 2 — Hospital Patient Analysis Dashboard
-
-- Total Patients
-- Total Billing Revenue
-- Average Billing per Patient
-- Average Length of Stay
-- Monthly Patient Admission Trends
-- Top 10 Hospitals by Billing Revenue
-- Patient Count by Medical Condition
-- Patient Distribution by Insurance Provider
-
-### 👥 Page 3 — Patient Detail
-
-- Detailed patient records in a table
-- Medical Condition slicer
-- Admission Type slicer
-- Patient demographics and billing details
-- Department, length of stay, and risk classification
-
-### 💰 Page 4— Billing Analysis
-
-- Average Billing Amount by Department and Billing Tier
-- Billing Matrix by Medical Condition and Insurance Provider
-- Admission Year slicer
-- Comparison of billing distribution across departments
-
-## ⚙️ Key Features
-
-- 🎛️ Interactive slicers and filters
-- 📈 Dynamic charts and KPI cards
-- 🔍 Cross-filtering between visuals
-- 🗂️ Multiple report pages
-- 🧹 Structured data-cleaning workflow
-- 🔗 Merged lookup data for department analysis
-- 📊 Patient, billing, and insurance summaries
-- 🎨 Consistent dashboard theme and formatting
-
-## 💡 Key Insights
-
-The dashboard is designed to help explore questions such as:
-
-- Which medical conditions account for the highest patient counts?
-- Which hospitals generate the highest total billing revenue?
-- How do patient admissions change over time?
-- How is billing distributed across departments and insurance providers?
-- How do admission type and patient age affect the displayed results?
-- Which billing tiers contribute most to department-level averages?
-
-*Actual findings should be documented after validating the final charts, measures, and filters.*
-
-## 🖼️ Dashboard Preview
-
-Add screenshots of your completed report here.
-
-```markdown
-![Hospital Patient Analysis Dashboard](screenshots/page1.png)
-
-![Patient Detail](screenshots/page2.png)
-
-![Billing Analysis](screenshots/page3.png)
+```text
+Healthcare-Patient-Analytics-Dashboard/
+│
+├── Healthcare_Patient_Analytics_Dashboard.pbix
+├── healthcare_dataset.csv
+├── Condition_Dept_Lookup.csv
+├── README.md
+└── images/
+    ├── 01-home.png
+    ├── 02-dashboard-overview.png
+    ├── 03-patient-detail.png
+    ├── 04-billing-analysis.png
+    ├── 05-power-query-applied-steps.png
+    └── video-thumbnail.png
 ```
 
-📌 Create a folder named `screenshots` in your repository and add the three dashboard screenshots using the filenames shown above.
+---
 
-## 🚀 How to Run the Project
+## 🚀 How to Use
 
-1. 📥 Download the healthcare dataset from Kaggle.
-2. 📄 Create the `Condition_Dept_Lookup.csv` file.
-3. 📊 Open Microsoft Power BI Desktop.
-4. 📂 Import both CSV files.
-5. 🔄 Complete the Power Query transformations and create the summary queries.
-6. 🔗 Apply the merge, pivot, unpivot, and append operations.
-7. ✅ Click **Close & Apply** to load the prepared data.
-8. 📈 Build the three report pages and configure the visuals.
-9. 🎛️ Test the slicers, filters, and visual interactions.
-10. 💾 Save the final report as `Healthcare_Patient_Analytics.pbix`.
+1. Download or clone this repository.
+2. Keep `healthcare_dataset.csv` and `Condition_Dept_Lookup.csv` in the same folder.
+3. Open `Healthcare_Patient_Analytics_Dashboard.pbix` in **Power BI Desktop**.
+4. If Power BI shows a data source error, go to **Home → Transform data → Data source settings → Change Source** and select your local CSV files.
+5. Click **Refresh** to load the data.
+6. Use the slicers and click on visuals to explore the four report pages.
 
-## 🎥 Video Demonstration
-
-📹 **Project Walkthrough:** [Add your video link here]
-
-The demonstration can cover:
-
-- Dataset introduction and data source connection
-- Power Query transformations
-- Grouping, merging, pivoting, and appending
-- KPI cards and dashboard visualizations
-- Slicers, filters, and report navigation
+---
 
 ## 📚 Learning Outcomes
 
-Through this project, I practiced:
+Through this project I practiced:
 
-- Importing and managing CSV data sources
-- Cleaning and profiling datasets using Power Query
-- Creating conditional and custom columns
-- Applying grouping and aggregation
-- Merging and appending queries
-- Pivoting and unpivoting data
-- Building interactive reports in Power BI
-- Designing multi-page dashboards for analytical reporting
+- Loading CSV data in Import mode and profiling data quality.
+- Cleaning text, number and date columns in Power Query.
+- Creating index, conditional and custom columns.
+- Using Group By, Merge, Pivot, Unpivot and Append.
+- Building and using parameters.
+- Designing KPI cards, charts, slicers and a multi-page report.
+- Setting up filters and visual interactions in Power BI.
+
+---
 
 ## 👩‍💻 Author
 
 **Simran Gohel**
 
-🎓 Aspiring Data Analyst | Power BI | SQL | Excel | Python
-
-🔗 **GitHub:** https://github.com/simrangohel70-lab
-
+[![GitHub](https://img.shields.io/badge/GitHub-simrangohel70--lab-181717?style=flat-square&logo=github)](https://github.com/simrangohel70-lab)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Data%20%26%20Tech-CC0000?style=flat-square)](https://simrangohel70-lab.github.io/)
 
 ---
 
-<p align="center">
-  ⭐ If you find this project interesting, consider starring the repository!
-</p>
+<div align="center">
 
-<p align="center">
-  <b>Made with 📊 Power BI and 💙 a passion for data analytics</b>
-</p>
+⭐ If you found this project useful, please give the repository a star!
+
+</div>
