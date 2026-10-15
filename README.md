@@ -66,8 +66,6 @@ Watch the full walkthrough of the dashboard and the Power Query steps:
 
 </div>
 
-> **Note:** In Google Drive, right-click the video, choose **Share**, and set access to **Anyone with the link → Viewer**, so everyone can open it.
-
 ---
 
 ## 📊 Dashboard Preview
