@@ -15,13 +15,8 @@
 
 ## 🎥 Video Demonstration
 
-<p align="center">
-  <a href="YOUR_YOUTUBE_VIDEO_LINK">
-    <img src="https://img.shields.io/badge/▶%20Watch%20Project%20Demo-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="Watch Project Demo"/>
-  </a>
-</p>
+click here to watch video:-https://drive.google.com/file/d/1sC4ReI0DzASuTv7AGZe6cqkt99XRngmM/view?usp=sharing
 
-This video demonstrates the complete **Healthcare Patient Analytics Dashboard** project, including:
 
 - 📂 Dataset import and data source connection
 - 🧹 Data cleaning and transformation using Power Query
